@@ -46,8 +46,8 @@ bool Game::GameRun()
 			
 			_player->Update();
 
-			CollisionManager::CollictionPreventMove(_player, _wall);
-			CollisionManager::CollictionPreventMove(_player->getBullet(), _wall);
+			CollisionManager::CollisionPreventMove(_player, _wall);
+			CollisionManager::CollisionPreventMove(_player->getBullet(), _wall);
 			if (win.getDevice()->BeginScene())
 			{
 				_wall->Draw();

@@ -19,7 +19,7 @@ MyRectangle  CollisionManager::BroadphaseRect(Object *A)
 	return MyRectangle(y, x, width, height);
 }
 
-void CollisionManager::CollictionPreventMove(Object* A, Object* B)
+void CollisionManager::CollisionPreventMove(Object* A, Object* B)
 {
 	// A chuyển động B đứng yên
 	MyRectangle broadphase = BroadphaseRect(A);
